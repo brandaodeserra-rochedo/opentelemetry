@@ -13,7 +13,7 @@ provider = LoggerProvider(resource=resource)
 
 # Exporter via OTLP
 processor = BatchLogRecordProcessor(
-    OTLPLogExporter(endpoint='http://172.21.121.140:4317', insecure=True)
+    OTLPLogExporter(endpoint='http://localhost:4317', insecure=True)
 )
 
 provider.add_log_record_processor(processor)
@@ -26,10 +26,8 @@ logger = logging.getLogger(__name__)
 
 # OTel Handler
 logger.addHandler(handler)
-
-# Default Handler
 logger.addHandler(logging.StreamHandler())
 
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.WARNING)
 
 logger.critical('Send error for Opentelemetry')

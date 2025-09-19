@@ -38,17 +38,14 @@ handler.addFilter(RemoveExtra())
 # Add the OpenTelemetry Logging Handler to Loguru
 logger.add(handler, level='DEBUG', serialize=True)
 
-# Create a tracer instance
+# Criando instancia do  tracer 
 tracer = get_tracer(__name__)
 
 @logger.catch
 def divide():
     with tracer.start_as_current_span("divide-operation"):
-        logger.info("Starting the divide operation")
-        
-        # Simulate an error
+        logger.info("Motiva: Starting the divide operation Taxes Infraction manager")
         1 / 0
 
 
-# Run the functions
 divide()
