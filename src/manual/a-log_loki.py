@@ -3,9 +3,7 @@ import logging
 from opentelemetry._logs import set_logger_provider
 from opentelemetry.sdk._logs import LoggerProvider, LoggingHandler
 from opentelemetry.sdk._logs.export import BatchLogRecordProcessor
-from opentelemetry.exporter.otlp.proto.grpc._log_exporter import (
-    OTLPLogExporter
-)
+from opentelemetry.exporter.otlp.proto.grpc._log_exporter import (OTLPLogExporter)  # noqa
 from opentelemetry.sdk.resources import SERVICE_NAME, Resource
 
 resource = Resource({SERVICE_NAME: 'app-send-log'})
@@ -30,4 +28,8 @@ logger.addHandler(logging.StreamHandler())
 
 logger.setLevel(logging.WARNING)
 
-logger.critical('Send error for Opentelemetry')
+logger.critical('Critical message MegaPADB - SKY - CAMC connect Fail !')
+
+logger.error('Error message MegaPADB')
+
+logger.warning('Warning message MEgaPADB')
