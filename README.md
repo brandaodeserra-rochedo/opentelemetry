@@ -1,6 +1,8 @@
 
 # OpenTelemetry coletando logs, trace e metricas
 
+bash src/command.sh 
+
 ##  Stack
 - OpenTelemetry Collector 
 - Prometheus (Coleta de métricas)

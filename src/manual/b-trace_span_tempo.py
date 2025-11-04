@@ -51,14 +51,14 @@ def run_operations():
 
 
 def sum():
-    with tracer.start_as_current_span("calc-tarifacao"):
+    with tracer.start_as_current_span("calc-taxes"):
         logger.info("Iniciando a operação de tarifação Subscription")
         result_sum = 1 + 1
         logger.info(f"Sum ok with result = {result_sum}")
 
 
 def multiply():
-    with tracer.start_as_current_span("star-camc-integration"):
+    with tracer.start_as_current_span("start-camc-integration"):
         logger.info("Iniciando a operação de integração com CAMC")
         result_multiply = 2 * 2
         logger.info(f"ok with result = {result_multiply}")
