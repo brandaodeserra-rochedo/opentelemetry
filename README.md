@@ -4,6 +4,7 @@
 ##  Comando para rodar os coletores
 ```
 bash src/command.sh 
+bash src/auto/bash-command.sh
 ```
 
 ##  Stack
