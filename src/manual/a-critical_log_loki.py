@@ -25,7 +25,7 @@ class RemoveExtra(Filter):
 handler = LoggingHandler(level=INFO, logger_provider=provider)
 handler.addFilter(RemoveExtra())
 
-logger.add(handler, level='DEBUG: MegaPADB', serialize=True)
+logger.add(handler, level='DEBUG', serialize=True)
 
 
 @logger.catch

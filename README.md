@@ -1,7 +1,10 @@
 
 # OpenTelemetry coletando logs, trace e metricas
 
+##  Comando para rodar os coletores
+```
 bash src/command.sh 
+```
 
 ##  Stack
 - OpenTelemetry Collector 

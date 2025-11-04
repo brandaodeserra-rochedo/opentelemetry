@@ -3,5 +3,5 @@ export OTEL_EXPORTER_OTLP_ENDPOINT=0.0.0.0:4317
 export OTEL_EXPORTER_OTLP_INSECURE=true
 export OTEL_LOGS_EXPORTER=otlp
 export OTEL_SERVICE_NAME=instru-log-loki-auto
-opentelemetry-instrument python auto-log-loki.py
+opentelemetry-instrument python src/auto/auto-log-loki.py
 
